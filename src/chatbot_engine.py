@@ -21,8 +21,8 @@ def create_index() -> VectorStoreIndexWrapper:
 def create_tools(index: VectorStoreIndexWrapper) -> List[BaseTool]:
     vectorstore_info = VectorStoreInfo(
         vectorstore=index.vectorstore,
-        name="udemy-langchain source code",
-        description="Source code of application named udemy-langchain",
+        name="u-langchain source code",
+        description="Source code of application named u-langchain",
     )
     toolkit = VectorStoreToolkit(vectorstore_info=vectorstore_info)
     return toolkit.get_tools()
